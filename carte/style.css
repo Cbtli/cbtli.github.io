@@ -4,3 +4,17 @@ body {
 i {
     color: red;
 }
+
+#carte>* {
+    position: absolute;
+}
+
+.popup {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}
