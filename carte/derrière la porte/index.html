@@ -9,7 +9,14 @@
 <body>
    <div id="carte">
         <div id="Fenêtre" style="left: 238px; top: 150px"> 
-           <img src="Fenêtre fermée.png">
+           <img src="Fenêtre fermée.png" onclick="changeImage(this)">
+ <script>
+
+    function changeImage(image) {
+        image.src = "Fenêtre ouverte sur texte" ;
+    }
+
+  </script>
         </div>
    </div>
 </body>
