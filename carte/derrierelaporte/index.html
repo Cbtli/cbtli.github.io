@@ -7,30 +7,34 @@
 <link rel="stylesheet" href="/carte/style.css" type="text/css" media="screen" />
 </head>
 <body>
-   <div id="carte">
-        <div id="Fenêtre" style="left: 238px; top: 150px"> 
-           <img src="Fenêtre fermée.png" onclick="changeImage(this)">
- <script>
 
-    function changeImage(image) {
-        image.src = "Fenêtre ouverte sur escalier.png";
-       
-    }
-  </script>
-        </div>
-   </div>
-    <div id="carte">
-        <div id="Fenêtre" style="left: 1000px; top: 150px"> 
-           <img src="Fenêtre fermée.png" onclick="changeImage(this)">
- <script>
+    <div style="left: 2380px; top: 150px">
 
-    function changeImage(image) {
-        image.src = "Fenêtre ouverte sur texte.png";
-       
+      <img id="Fenetre3fermee" src="Fenetrefermee.png" onclick="this.style.display='none'; Fenetre3ouverte.style.display='initial';">
+
+      <img id="Fenetre3ouverte" src="Fenetreouvertesurescalier.png" usemap="#Fen3map" style="display:none">
+      <map name="Fen3map">
+        <area shape="rect" coords="0,0,200,200" href="https://colinbottinelli.ch">
+
+        <area shape="default" href="javascript:fermeFen3()">
+      </map>
+    </div>
+
+  </div>
+  <script>
+
+    function fermeFen3() {
+      document.getElementById("Fenetre3ouverte").style.display = "none";
+      Fenetre3fermee.style.display = "initial";
     }
+
+
   </script>
-        </div>
-   </div>
+
+</body>
+
+</html>
+
 </body>
 
 </html>
