@@ -24,16 +24,21 @@
     </div>
       <div style="left: 700px; top: 700px">
      <img id="tapis" src="tapis.png">
+       <area shape="rect" coords="40,40,60,60" href="javascript:texte()">
     </div>
-  
+    <div style="left: 50px; top: 100px">
+     <img id="Fenetreouvertesurtexte" src="Fenetreouvertesurtexte.png" Fenetreouvertesurtexte.style.display'none'>
+    </div>
   </div>
   <script>
-
+   
     function fermeFen3() {
       document.getElementById("Fenetre3ouverte").style.display = "none";
       Fenetre3fermee.style.display = "initial";
     }
-
+    function texte() {
+     Fenetreouvertesurtexte.style.display = "initial";
+    }
 
   </script>
 
