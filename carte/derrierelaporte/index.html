@@ -25,10 +25,13 @@
       <img id="lit" src="Lit.png" onclick="texte()">
     </div>
     <div style="left: 700px; top: 700px">
-      <img id="tapis" src="tapis.png">
+      <img id="tapis" src="tapis.png" onclick="textebarre()">
     </div>
     <div style="left: 0px; top: 0px">
       <img id="textevient" hidden src="texte01.png" onclick="this.style.display ='none';">
+    </div>
+    <div style="left: 0px; top: 0px">
+      <img id="textebarre" hidden src="texte01barre.png" onclick="this.style.display ='none';">
     </div>
   </div>
   <script>
@@ -38,6 +41,9 @@
       Fenetre3fermee.style.display = "initial";
     }
     function texte() {
+      textevient.style.display = "initial";
+    }
+    function textebarre() {
       textevient.style.display = "initial";
     }
 
