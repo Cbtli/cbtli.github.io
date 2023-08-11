@@ -17,19 +17,19 @@
         <area shape="square" coords="176,156,256,211" href="javascript:ouvretext(text2)">
         <area shape="square" coords="314,167,404,215" href="javascript:ouvretext(text3)">
         <area shape="square" coords="223,290,273,344" href="javascript:ouvretext(text4)">
-        <area shape="square" coords="120,423,221,482" href="../../index.html">
-        <area shape="square" coords="322,431,389,495" href="../../index.html">
-        <area shape="square" coords="94,534,166,592" href="../../index.html">
-        <area shape="square" coords="117,687,181,742" href="../../index.html">
-        <area shape="square" coords="194,791,251,860" href="../../index.html">
-        <area shape="square" coords="320,843,396,917" href="../../index.html">
-        <area shape="square" coords="83,898,167,974" href="../../index.html">
-        <area shape="square" coords="356,960,430,1021" href="../../index.html">
-        <area shape="square" coords="251,1063,302,1128" href="../../index.html">
-        <area shape="square" coords="85,1153,157,1212" href="../../index.html">
-        <area shape="square" coords="337,1185,388,1249" href="../../index.html">
-        <area shape="square" coords="342,1283,413,1352" href="../../index.html">
-        <area shape="square" coords="83,1312,162,1446" href="../../index.html">
+        <area shape="square" coords="120,423,221,482" href="javascript:ouvretext(text5)">
+        <area shape="square" coords="322,431,389,495" href="javascript:ouvretext(text6)">
+        <area shape="square" coords="94,534,166,592" href="javascript:ouvretext(text7)">
+        <area shape="square" coords="117,687,181,742" href="javascript:ouvretext(text8)">
+        <area shape="square" coords="194,791,251,860" href="javascript:ouvretext(text9)">
+        <area shape="square" coords="320,843,396,917" href="javascript:ouvretext(text10)">
+        <area shape="square" coords="83,898,167,974" href="javascript:ouvretext(text11)">
+        <area shape="square" coords="356,960,430,1021" href="javascript:ouvretext(text12)">
+        <area shape="square" coords="251,1063,302,1128" href="javascript:ouvretext(text13)">
+        <area shape="square" coords="85,1153,157,1212" href="javascript:ouvretext(text14)">
+        <area shape="square" coords="337,1185,388,1249" href="javascript:ouvretext(text15)">
+        <area shape="square" coords="342,1283,413,1352" href="javascript:ouvretext(text16)">
+        <area shape="square" coords="83,1312,162,1446" href="javascript:ouvretext(text17)">
         <area shape="square" coords="" href="../../index.html">
         <area shape="square" coords="" href="../../index.html">
         <area shape="square" coords="" href="../../index.html">
@@ -41,16 +41,14 @@
      <div style="left: 1000px; top: 0px;">
         <div id="text1" style="display:none;">blablabla</div>
         <div id="text2" style="display:none;">king kong theory</div>
-        <div id="text3" style="display:none;">
-          foo bar <br/> foo bar <br/> foo bar
-        </div>
+        <div id="text3" style="display:none;">foo bar <br/> foo bar <br/> foo bar</div>
         <div id="text4" style="display:none;">ouch</div>
     
     </div>
 
     <script>
   function ouvretext(thetext) {
-      thetext.style.display = "block";
+      thetext.style.display = "intial";
       var textbox = thetext.parentNode;
       thetext.remove();
       textbox.appendChild(thetext);
